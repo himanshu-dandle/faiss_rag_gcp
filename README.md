@@ -17,38 +17,23 @@ This project implements a **Retrieval-Augmented Generation (RAG) API** using **F
 ```
 FAISS_RAG_GCP/
 │
-├── .gcp/                   # GCP-related deployment files
-├── venv/                   # Virtual environment (should be in .gitignore)
-│
-├── api/                    # API-related code (if needed)
-├── faiss_index/            # FAISS index storage (ignored in .gitignore)
-│
-├── data/                   # Dataset storage (if applicable)
-│   ├── raw/                # Raw data (if needed)
-│   ├── processed/          # Cleaned & preprocessed data (if applicable)
-│
-├── deployment/             # API deployment scripts
-│   ├── Dockerfile          # Docker container setup
-│   ├── requirements.txt    # Dependencies for deployment
-│   ├── gcp_deployment/     # Cloud Run deployment configs
-│
-├── logs/                   # API logs for debugging (if applicable)
-│
-├── notebooks/              # Jupyter notebooks for testing FAISS search (if needed)
-│
-├── src/                    # Source code for API
-│   ├── main.py             # FastAPI main application
-│   ├── build_faiss_index.py# Script to build FAISS index
-│   ├── initialize_db.py    # Initializes SQLite DB
-│
-├── tests/                  # Unit tests (currently empty)
-│
-├── __pycache__/            # Compiled Python files (should be in .gitignore)
-│
-├── .gitignore              # Files to ignore in Git
-├── README.md               # Project documentation
-├── requirements.txt        # Project dependencies
-└── main.py                 # Main script (if needed)
+├── .env                      # Environment variables (ignored in .gitignore)
+├── .gitignore                 # Files & folders to ignore in Git
+├── api/                       # API-related code (if needed)
+├── build_faiss_index.py       # Script to build FAISS index
+├── Dockerfile                 # Docker container setup
+├── faiss_index/               # FAISS index storage (ignored in .gitignore)
+├── gcp_deployment/            # Cloud Run deployment configs
+├── initialize_db.py           # Initializes SQLite DB
+├── LICENSE                    # License file
+├── llm_knowledge.db           # SQLite database (ignored in .gitignore)
+├── main.py                    # FastAPI main application
+├── README.md                  # Project documentation
+├── requirements.txt           # Project dependencies
+├── tests/                     # Unit tests (currently empty)
+├── utils/                     # Utility functions
+├── venv/                      # Virtual environment (ignored in .gitignore)
+└── __pycache__/               # Compiled Python files (ignored in .gitignore)
 ```
 ---
 

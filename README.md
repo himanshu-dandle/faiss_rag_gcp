@@ -91,10 +91,10 @@ cd faiss_rag_gcp
 ##  **Deployment on Google Cloud Run**
 	The API is deployed using Docker & Google Cloud Run.
 
-	### **🔹 Step 1: Build & Push Docker Image**
+	🔹 Step 1: Build & Push Docker Image
 		docker build -t gcr.io/faiss-rag-gcp/faiss-rag-api .
 		docker push gcr.io/faiss-rag-gcp/faiss-rag-api
-	### **🔹 Step 2: Deploy to Cloud Run**
+	🔹 Step 2: Deploy to Cloud Run
 		gcloud run deploy faiss-rag-api ^
 			--image gcr.io/faiss-rag-gcp/faiss-rag-api ^
 			--platform managed ^
@@ -105,23 +105,23 @@ cd faiss_rag_gcp
 
 
 
-##**How to Use the API**
+## **How to Use the API**
 ### **🔹 API Endpoint: POST /search**
-	Sends a query to the FAISS-powered retrieval system.
-	Returns the most relevant documents.
-	 Example Request
-		curl -X POST "https://faiss-rag-api-xxxxxx.a.run.app/search" ^
-			 -H "Content-Type: application/json" ^
-			 -d "{\"query\": \"What is FAISS?\"}"
-	 Example Response
-		{
-			"query": "What is FAISS?",
-			"retrieved_docs": [
-				"FAISS is a library for efficient similarity search.",
-				"Retrieval-Augmented Generation (RAG) improves LLM responses.",
-				"OpenAI released GPT-4 in 2023."
-			]
-		}
+	1. Sends a query to the FAISS-powered retrieval system.
+	2. Returns the most relevant documents.
+		 Example Request
+			curl -X POST "https://faiss-rag-api-xxxxxx.a.run.app/search" ^
+				 -H "Content-Type: application/json" ^
+				 -d "{\"query\": \"What is FAISS?\"}"
+		 Example Response
+			{
+				"query": "What is FAISS?",
+				"retrieved_docs": [
+					"FAISS is a library for efficient similarity search.",
+					"Retrieval-Augmented Generation (RAG) improves LLM responses.",
+					"OpenAI released GPT-4 in 2023."
+				]
+			}
 **How FAISS Works**
 1. FAISS stores vector embeddings of documents.
 2. User queries are converted into embeddings using OpenAI embeddings.

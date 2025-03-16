@@ -119,4 +119,4 @@ cd faiss_rag_gcp
 3. Build a UI using Streamlit or Gradio for an interactive chatbot.
 
 Author: Himanshu Dandle
-GitHub: himanshu-dandle
+GitHub: https://github.com/himanshu-dandle

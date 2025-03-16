@@ -14,6 +14,7 @@ This project implements a **Retrieval-Augmented Generation (RAG) API** using **F
 ---
 
 ##  **Project Structure**
+```
 FAISS_RAG_GCP/
 │
 ├── .gcp/                   # GCP-related deployment files
@@ -48,7 +49,7 @@ FAISS_RAG_GCP/
 ├── README.md               # Project documentation
 ├── requirements.txt        # Project dependencies
 └── main.py                 # Main script (if needed)
-
+```
 ---
 
 ##  **Setup & Installation**

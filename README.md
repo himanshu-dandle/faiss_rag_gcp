@@ -1,4 +1,4 @@
-# 🚀 FAISS RAG API - FastAPI + FAISS + OpenAI + GCP Cloud Run
+#  FAISS RAG API - FastAPI + FAISS + OpenAI + GCP Cloud Run
 
 This project implements a **Retrieval-Augmented Generation (RAG) API** using **FAISS for similarity search** and **FastAPI** for serving search queries. The API is deployed on **Google Cloud Run**, making it scalable and accessible via HTTP requests.
 
@@ -13,17 +13,16 @@ This project implements a **Retrieval-Augmented Generation (RAG) API** using **F
 
 ---
 
-## 📌 **Folder Structure**
-FAISS_RAG_GCP/ │── api/ # API-related code (if needed) │── gcp_deployment/ # GCP deployment configurations │── tests/ # Unit tests (if needed) │── utils/ # Utility functions │── faiss_index/ # FAISS index storage (ignored in .gitignore) │── .env # Environment variables (ignored in .gitignore) │── build_faiss_index.py # Script to create FAISS index │── initialize_db.py # Initializes the SQLite database │── main.py # FastAPI app (FAISS search API) │── Dockerfile # Docker configuration for Cloud Run │── requirements.txt # Python dependencies │── README.md # This documentation file │── llm_knowledge.db # SQLite database (ignored in .gitignore) │── venv/ # Virtual environment (ignored in .gitignore)
-
+##  **Folder Structure**
+```FAISS_RAG_GCP/ │── api/ # API-related code (if needed) │── gcp_deployment/ # GCP deployment configurations │── tests/ # Unit tests (if needed) │── utils/ # Utility functions │── faiss_index/ # FAISS index storage (ignored in .gitignore) │── .env # Environment variables (ignored in .gitignore) │── build_faiss_index.py # Script to create FAISS index │── initialize_db.py # Initializes the SQLite database │── main.py # FastAPI app (FAISS search API) │── Dockerfile # Docker configuration for Cloud Run │── requirements.txt # Python dependencies │── README.md # This documentation file │── llm_knowledge.db # SQLite database (ignored in .gitignore) │── venv/ # Virtual environment (ignored in .gitignore)```
 
 
 ---
 
-## 🚀 **Setup & Installation**
+##  **Setup & Installation**
 
 ### **🔹 Step 1: Clone the Repository**
-```
+
 git clone https://github.com/himanshu-dandle/faiss_rag_gcp.git
 cd faiss_rag_gcp
 

@@ -51,8 +51,7 @@ cd faiss_rag_gcp
 	source venv/bin/activate  # On Mac/Linux
 	venv\Scripts\activate     # On Windows
 
-	pip install -r requirements.txt
-	
+	pip install -r requirements.txt	
 
 ### **🔹 Step 3: Set Up Environment Variables**
 	Create a .env file in the project root and add your OpenAI API Key:

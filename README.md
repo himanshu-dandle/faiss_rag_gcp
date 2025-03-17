@@ -93,6 +93,7 @@ cd faiss_rag_gcp
 ### **🔹 API Endpoint: POST /search**
 	1. Sends a query to the FAISS-powered retrieval system.
 	2. Returns the most relevant documents.
+	3. GPT-4 generates a final answer based on retrieved documents.
 		 Example Request
 			curl -X POST "https://faiss-rag-api-xxxxxx.a.run.app/search" ^
 				 -H "Content-Type: application/json" ^
@@ -110,12 +111,18 @@ cd faiss_rag_gcp
 1. FAISS stores vector embeddings of documents.
 2. User queries are converted into embeddings using OpenAI embeddings.
 3. FAISS performs a nearest-neighbor search to find the closest documents.
-4. The API returns the most relevant documents based on similarity scores.
+4. GPT-4 takes the retrieved documents and generates a final contextual answer.
+5. The API returns both the retrieved documents & GPT-4’s response.
+
 
 **Next Steps & Enhancements**
-1. Integrate an LLM (e.g., GPT-4) to generate contextual answers.
-2. Use Google’s Vertex AI Matching Engine for a more scalable solution.
-3. Build a UI using Streamlit or Gradio for an interactive chatbot.
+1. Optimize FAISS indexing for faster retrieval (HNSW, PQ compression).
+2. Use Hybrid Search (FAISS + BM25) to improve relevance.
+3. Integrate LangChain Agents for multi-step reasoning over retrieved docs..
+4. Deploy on Vertex AI Matching Engine for enterprise-scale retrieval.
+5. Build a UI using Streamlit or Gradio for an interactive chatbot.
+
+
 
 Author: Himanshu Dandle
 GitHub: https://github.com/himanshu-dandle
